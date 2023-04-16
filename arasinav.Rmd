@@ -1,0 +1,58 @@
+---
+title: "ARASINAVÖDEV"
+author: 
+  - Aydın Anıl Dokuzoğlu[^1]
+bibliography: ../bibliography/biblio.bib
+csl: ../csl/apa-tr.csl
+header-includes:
+  - \usepackage{polyglossia}
+  - \setmainlanguage{turkish}
+  - \usepackage{booktabs}
+  - \usepackage{caption} 
+  - \captionsetup[table]{skip=10pt}
+output:
+  bookdown::pdf_document2:
+    fig_caption: yes
+    fig_height: 3
+    fig_width: 4
+    keep_tex: no
+    latex_engine: xelatex
+    number_sections: yes
+    toc: no
+geometry: margin=1in
+link-citations: yes
+urlcolor: blue
+fontsize: 12pt
+biblio-style: apalike
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+<!-- ======================================================================= -->
+<!-- ============================== NOTLAR ================================= -->
+<!-- ======================================================================= -->
+[^1]: 20080274, https://github.com/anl200000?tab=repositories Repo](https://github.com/anl200000/aras-nav-dev)
+
+
+# Giriş:Big Mac Endeksi, ekonomi ve finans dünyasında kullanılan bir gösterge olup, McDonald's fast food restoranlarının Big Mac adlı ürününün fiyatlarını karşılaştırarak farklı ülkelerin para birimlerinin değerlerini anlamak için kullanılan bir endekstir. The Economist dergisi tarafından 1986 yılında ortaya atılmıştır ve o tarihten bu yana düzenli olarak güncellenmektedir. Big Mac Endeksi, bir ülkenin para biriminin diğer ülke para birimine göre satın alma gücünü ölçmeye çalışır.İki farklı ülkenin para birimi cinsinden Big Mac'in fiyatını karşılaştırarak, Big Mac'in farklı ülkelerdeki fiyatlarındaki farklılıkları ortaya koyar.
+. 
+
+
+
+## Çalışmanın Amacı
+Big mac endeksiyle ile ilgili analiz yapma sebebimiz ise Fiyat ve para birimi analizi yapmak içindir.Bu analizler sayesinde ülkeler arasındaki satın alma gücü farkını sınayabileceğiz ve bu endeks ülkelerin gelişmişlik düzeyi hakkında bilgi sahibi olacağız.Bu analizleri yapmak için Data.world web sitesi üzerinden 2022 Big Mac Endeksicsv. veri seti tablosuna eriştim. Bu veri setinde yer alan değişkenler şunlardır:
+
+Ülke: Bu değişken, Big Mac Endeksi verilerinin raporlandığı ülkenin adını gösterir.
+Dolar Döviz Kuru: Bu değişken, ülkenin para biriminin Amerikan dolarına olan döviz kuruunu temsil eder ve Big Mac fiyatlarını Amerikan doları cinsinden hesaplamak için kullanılır.
+Çin(CNY),Japonya(JPY) ve İngiltere(GSP)’nin para birimleri:Bu değişken, ülkenin para biriminin kendi ulusal para birimine olan döviz kuruunu gösterir ve Big Mac fiyatlarını ülkelerin ulusal para birimi cinsinden hesaplamak için kullanacağız.Böylece örneğin;Çin parası ile kaç big mac satın alabiliriz bunu da sınamış olacağız
+
+## Literatür 
+
+
+**_Taslakta bu cümleden sonra yer alan hiçbir şey silinmemelidir._**
+
+\newpage
+# Kaynakça {#references}
+<div id="refs"></div>
+

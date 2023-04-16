@@ -1,65 +1,95 @@
----
-title: "ARASINAVÖDEV"
-author: 
-  - Aydın Anıl Dokuzoğlu[^1]
-bibliography: ../bibliography/biblio.bib
-csl: ../csl/apa-tr.csl
-header-includes:
-  - \usepackage{polyglossia}
-  - \setmainlanguage{turkish}
-  - \usepackage{booktabs}
-  - \usepackage{caption} 
-  - \captionsetup[table]{skip=10pt}
-output:
-  bookdown::pdf_document2:
-    fig_caption: yes
-    fig_height: 3
-    fig_width: 4
-    keep_tex: no
-    latex_engine: xelatex
-    number_sections: yes
-    toc: no
-geometry: margin=1in
-link-citations: yes
-urlcolor: blue
-fontsize: 12pt
-biblio-style: apalike
----
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FALSE)
-```
+> BİG MAC ENDEKSİ(The BigMac Index)
 
-<!-- ======================================================================= -->
-<!-- ============================== NOTLAR ================================= -->
-<!-- ======================================================================= -->
-[^1]: 20080274, https://github.com/anl200000?tab=repositories Repo](https://github.com/KULLANICI_ADINIZ/REPO_ADINIZ)
+Giriş*: BigMac Endeksi,ekonomi ve finansdünyasında kullanılan bir gösterge
+olup,McDonald\'s fastfood restoranlarının BigMac adlı ürünününfiyatlarını
+karşılaştırarak farklı ülkelerin para birimlerinin değerlerini anlamakiçin
+kullanılan bir endekstir. TheEconomist dergisi tarafından 1986yılında ortaya
+atılmıştır veo tarihten buyana düzenli olarak güncellenmektedir.BigMac
+Endeksi,bir ülkenin para biriminin diğer ülke para birimine göre satınalma
+gücünü ölçmeye çalışır.İkifarklı ülkenin para birimi cinsinden BigMac\'in
+fiyatınıkarşılaştırarak,
+BigMac\'in farklıülkelerdeki fiyatlarındaki farklılıkları ortaya koyar.*
 
-# Vize Hakkında Önemli Bilgiler
+VERİKAYNAĞI:Veriler Data.world web sitesi üzerinden 2000-2022 arasıBig
+Mac
+Endeksiveri seti tablosundan alınmıştır.
 
-\colorbox{BurntOrange}{GITHUB REPO BAĞLANTINIZI BU DOSYANIN 35. SATIRINA YAZINIZ!}
+Veri setindeki değişkenler:Dolar,Euro/Döviz Kurları
 
-**Proje önerisi gönderimi, Github repo linki ile birlikte ekampus sistemine bir zip dosyası yüklenerek yapılacaktır. Sisteme zip dosyası yüklemezseniz ve Github repo linki vermezseniz ara sınav ve final sınavlarına girmemiş sayılırsınız.**
+Hamburger'in fiyatı
 
-**Proje klasörünüzü sıkıştırdıktan sonra (`YourStudentID.zip` dosyası) 16 Nisan 2023 23:59'a kadar *ekampus.ankara.edu.tr* adresine yüklemeniz gerekmektedir.**
+Para birimlerinin fazla/az değere sahip olması
 
-\colorbox{WildStrawberry}{Daha fazla bilgi için proje klasöründeki README.md dosyasını okuyunuz.}
+Çalışmamın Amacı*: Big mac endeksiyle ile ilgili analiz yapma sebebimiz*
 
-# Giriş
-Bu taslak size proje ödevinizi yazarken yardımcı olması amacıyla oluşturulmuştur. Ödevlerinizde, makalelerinizde, sunumlarınızda ve projelerinizde kullandığınız tüm bilgi kaynaklarına atıfta bulunmalısınız. Alıntı ve gönderme yapmak okuyuculara çalışmanızda kullandığınız/başvurduğunuz  kaynaklara ulaşma imkanı sağlar. **Her ne kadar kendi sözlerinizi kullanıyor olsanız da, başkalarına ait fikirleri çalışmanızda aktarıyorsanız bu fikirlerin kaynağını belgelemek zorundasınız. Aksi takdirde akademik intihal yapmış olursunuz.** Yazım konusunda @aydinonat:2007'ye başvurabilirsiniz. 
+*ise Fiyat ve para birimi analizi yapmak içindir.Bu analizler sayesinde*
 
+*ülkeler arasındaki satın alma gücü farkını sınayabileceğiz ve bu
+endeks*
 
-Proje ödevinizde yer alan başlıkların bu metinde yer alan başlıkları kesinlikle içermesi gerekmektedir (doğal olarak ilk bölüm başlığı hariç). Burada kullanılan başlıklar haricinde farklı alt başlıklar da kullanabilirsiniz. Projenizi yazarken bu dosyayı taslak olarak kullanıp içeriğini projenize uyarlayınız.
+*ülkelerin gelişmişlik düzeyi hakkında bilgi sahibi olacağız.Yine bu
+veri*
 
-## Çalışmanın Amacı
-Bu bölümde yaptığınız çalışmanın amacından ve öneminden birkaç paragraf ile bahsediniz.
+*seti sayesinde ABD doları karşısında hangi para birimlerinin ne oranda*
 
-## Literatür 
-Bu bölümde konu ile ilgili olarak okuduğunuz makaleleri referans vererek tartışınız. **Her makaleyi ayrı başlık altında tek tek özetlemeyiniz.** Literatür taramasında **en az dört** makaleye atıf yapılması ve bu makalelerden **en az ikisinin İngilizce** olması gerekmektedir.
+*değer kaybettiğini veya kazandığını görebiliriz.*
 
+Literatür:The Economist dergisi tarafından 1986 yılında tek bir malı
 
-**_Taslakta bu cümleden sonra yer alan hiçbir şey silinmemelidir._**
+içeren Big Mac Endeksi iki ülke arasındaki satın alam gücünü ölçmek
 
-\newpage
-# Kaynakça {#references}
-<div id="refs"></div>
+için yıllardır kullanılan bir yöntemdir ancak her zaman doğru sonuçları
 
+vermeyebilir.Döviz kurları, The Economist tarafından yayınlanan Big
+
+Mac Endeksi\'nden (BMI) önemli ölçüde sapabilir ve bu sapmalar
+
+sürekli ve önemli olabilir. Bu nedenle, dövizlerin BMI\'ye dayalı olarak
+
+> değerlendirilmesi güvenilir bir fiyattölçüsü olarak kabul edilemez.
+>
+> BMI\'nin önemli pratik güce sahip olabilmesi için geliştirilmesi\
+> gerekmektedir.(@article{clements2007big).Güvenirlilğine gölge düşüren
+> diğer bir örnek ise 2000-2014 arası Endonezya'dır.Big Mac Endeksi'nin
+> aksine ulusal para birimi Rupiah endekse göre daha düşük
+> değerlenmiştir.(@mastersthesis{atasoy2015doviz).Bütün bu olumsuz
+> örneklere rağmen bütün refaranslardaBig Mac Eğrisi'nin satın alma
+> gücü,döviz kuru belirleme ve ülkelerin enflasyon oranlarına birışık
+> tuttuğu ortak bir düşünce olarak kabul edilebilir.2000-2012 arası
+> endekse göre Arjantin Big Mac satın alma gücünün Arjantin\'de
+> azaldığını bulduk ve Big Mac Endeksi Arjantin'in o dönem düşen kişi
+> başı gelir oranına bir açıklama getirmemizi sağlamıştır\
+> diyebiliriz(@article{atal2014big)
+>
+> Öğrenci Numarası:20080274
+>
+> Github Repo linki:
+>
+> FR:\
+> :
+>
+> The Big Mac Index And Real-IncomeDisparity - Clute Journals:Vidya Atal
+>
+> Department of Economics and Finance
+>
+> MontclairStateUniversity\
+> :
+>
+> The Big Mac Index 21 Years On: An Evaluation of Burgereconomics
+> Kenneth W. Clements, Yihui Lan and Shi Pei Seah
+>
+> :
+>
+> TÜRKİYE İÇİN DENGE DÖVİZ KURU TAHMİNİ
+>
+> Burcu Yılmaz Şahin
+>
+> Giresun Üniversitesi\
+> Sosyal Bilimler Enstitüsü:\
+> DÖVİZ KURLARININ BELİRLENMESİNİ\
+> AÇIKLAYAN ULUSLARARASI PARİTE\
+> KURAMLARININ KIRILGAN BEŞLİ\
+> ÜLKELERİNDE GEÇERLİLİĞİNİN TEST\
+> EDİLMESİ
+>
+> Ahmet Bülent Atasoy:

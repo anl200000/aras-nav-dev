@@ -1,0 +1,145 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  12pt,
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\usepackage{polyglossia}
+\setmainlanguage{turkish}
+\usepackage{booktabs}
+\usepackage{caption}
+\captionsetup[table]{skip=10pt}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={ARASINAVÖDEV},
+  pdfauthor={Aydın Anıl Dokuzoğlu},
+  colorlinks=true,
+  linkcolor={Maroon},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{ARASINAVÖDEV}
+\author{Aydın Anıl Dokuzoğlu\footnote{20080274, \url{https://github.com/anl200000?tab=repositories} Repo{]}(\url{https://github.com/anl200000/aras-nav-dev})}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\hypertarget{giriux15fbig-mac-endeksi-ekonomi-ve-finans-duxfcnyasux131nda-kullanux131lan-bir-guxf6sterge-olup-mcdonalds-fast-food-restoranlarux131nux131n-big-mac-adlux131-uxfcruxfcnuxfcnuxfcn-fiyatlarux131nux131-karux15fux131laux15ftux131rarak-farklux131-uxfclkelerin-para-birimlerinin-deux11ferlerini-anlamak-iuxe7in-kullanux131lan-bir-endekstir.-the-economist-dergisi-tarafux131ndan-1986-yux131lux131nda-ortaya-atux131lmux131ux15ftux131r-ve-o-tarihten-bu-yana-duxfczenli-olarak-guxfcncellenmektedir.-big-mac-endeksi-bir-uxfclkenin-para-biriminin-diux11fer-uxfclke-para-birimine-guxf6re-satux131n-alma-guxfccuxfcnuxfc-uxf6luxe7meye-uxe7alux131ux15fux131r.iki-farklux131-uxfclkenin-para-birimi-cinsinden-big-macin-fiyatux131nux131-karux15fux131laux15ftux131rarak-big-macin-farklux131-uxfclkelerdeki-fiyatlarux131ndaki-farklux131lux131klarux131-ortaya-koyar.}{%
+\section{Giriş:Big Mac Endeksi, ekonomi ve finans dünyasında kullanılan bir gösterge olup, McDonald's fast food restoranlarının Big Mac adlı ürününün fiyatlarını karşılaştırarak farklı ülkelerin para birimlerinin değerlerini anlamak için kullanılan bir endekstir. The Economist dergisi tarafından 1986 yılında ortaya atılmıştır ve o tarihten bu yana düzenli olarak güncellenmektedir. Big Mac Endeksi, bir ülkenin para biriminin diğer ülke para birimine göre satın alma gücünü ölçmeye çalışır.İki farklı ülkenin para birimi cinsinden Big Mac'in fiyatını karşılaştırarak, Big Mac'in farklı ülkelerdeki fiyatlarındaki farklılıkları ortaya koyar.}\label{giriux15fbig-mac-endeksi-ekonomi-ve-finans-duxfcnyasux131nda-kullanux131lan-bir-guxf6sterge-olup-mcdonalds-fast-food-restoranlarux131nux131n-big-mac-adlux131-uxfcruxfcnuxfcnuxfcn-fiyatlarux131nux131-karux15fux131laux15ftux131rarak-farklux131-uxfclkelerin-para-birimlerinin-deux11ferlerini-anlamak-iuxe7in-kullanux131lan-bir-endekstir.-the-economist-dergisi-tarafux131ndan-1986-yux131lux131nda-ortaya-atux131lmux131ux15ftux131r-ve-o-tarihten-bu-yana-duxfczenli-olarak-guxfcncellenmektedir.-big-mac-endeksi-bir-uxfclkenin-para-biriminin-diux11fer-uxfclke-para-birimine-guxf6re-satux131n-alma-guxfccuxfcnuxfc-uxf6luxe7meye-uxe7alux131ux15fux131r.iki-farklux131-uxfclkenin-para-birimi-cinsinden-big-macin-fiyatux131nux131-karux15fux131laux15ftux131rarak-big-macin-farklux131-uxfclkelerdeki-fiyatlarux131ndaki-farklux131lux131klarux131-ortaya-koyar.}}
+
+.
+
+\hypertarget{uxe7alux131ux15fmanux131n-amacux131}{%
+\subsection{Çalışmanın Amacı}\label{uxe7alux131ux15fmanux131n-amacux131}}
+
+Big mac endeksiyle ile ilgili analiz yapma sebebimiz ise Fiyat ve para birimi analizi yapmak içindir.Bu analizler sayesinde ülkeler arasındaki satın alma gücü farkını sınayabileceğiz ve bu endeks ülkelerin gelişmişlik düzeyi hakkında bilgi sahibi olacağız.Bu analizleri yapmak için Data.world web sitesi üzerinden 2022 Big Mac Endeksicsv. veri seti tablosuna eriştim. Bu veri setinde yer alan değişkenler şunlardır:
+
+Ülke: Bu değişken, Big Mac Endeksi verilerinin raporlandığı ülkenin adını gösterir.
+Dolar Döviz Kuru: Bu değişken, ülkenin para biriminin Amerikan dolarına olan döviz kuruunu temsil eder ve Big Mac fiyatlarını Amerikan doları cinsinden hesaplamak için kullanılır.
+Çin(CNY),Japonya(JPY) ve İngiltere(GSP)'nin para birimleri:Bu değişken, ülkenin para biriminin kendi ulusal para birimine olan döviz kuruunu gösterir ve Big Mac fiyatlarını ülkelerin ulusal para birimi cinsinden hesaplamak için kullanacağız.Böylece örneğin;Çin parası ile kaç big mac satın alabiliriz bunu da sınamış olacağız
+
+\hypertarget{literatuxfcr}{%
+\subsection{Literatür}\label{literatuxfcr}}
+
+\textbf{\emph{Taslakta bu cümleden sonra yer alan hiçbir şey silinmemelidir.}}
+
+\newpage
+
+\hypertarget{references}{%
+\section{Kaynakça}\label{references}}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{0}{0}
+\end{CSLReferences}
+
+\end{document}
